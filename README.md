@@ -1,2 +1,3 @@
 # Kanboard
-Sublime Kanboard
+Sublime Kanboard Package
+
