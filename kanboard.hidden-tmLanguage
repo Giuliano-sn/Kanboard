@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>kanboard</string>
+    <key>scopeName</key>
+    <string>text.kanboard</string>
+    <key>uuid</key>
+    <string>638375b8-3509-4d37-a8d8-afad7a95b428</string>
+    <key>fileTypes</key>
+    <array>
+        <string>kanboard</string>
+    </array>
+    <key>patterns</key>
+    <array>
+
+      <dict>
+          <key>match</key>
+          <string>^(\s*)([▸▾] )([^\\/]*)(\\|/)?(.*)?$</string>
+          <key>name</key>
+          <string>kanboard.item.directory</string>
+          <key>captures</key>
+          <dict>
+              <key>1</key>
+              <dict>
+                  <key>name</key>
+                  <string>indent</string>
+              </dict>
+              <key>2</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.directory.symbol.kanboard</string>
+              </dict>
+              <key>3</key>
+              <dict>
+                  <key>name</key>
+                  <string>string.name.directory.kanboard</string>
+              </dict>
+              <key>4</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.directory.slash.kanboard</string>
+              </dict>
+              <key>5</key>
+                  <dict>
+                      <key>name</key>
+                      <string>string.error.kanboard</string>
+                  </dict>
+          </dict>
+      </dict>
+
+      <dict>
+          <key>match</key>
+          <string>^(\s*)(≡ )(\S.*?(\.[^\.\n]+)?)( \(.*\))?$</string>
+          <key>name</key>
+          <string>kanboard.item.file</string>
+          <key>captures</key>
+          <dict>
+              <key>1</key>
+              <dict>
+                  <key>name</key>
+                  <string>indent</string>
+              </dict>
+              <key>2</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.file.symbol.kanboard</string>
+              </dict>
+              <key>3</key>
+              <dict>
+                  <key>name</key>
+                  <string>string.name.file.kanboard</string>
+              </dict>
+              <key>4</key>
+              <dict>
+                  <key>name</key>
+                  <string>string.name.file.extension.kanboard</string>
+              </dict>
+              <key>5</key>
+              <dict>
+                  <key>name</key>
+                  <string>string.name.file.view_id.kanboard</string>
+              </dict>
+          </dict>
+      </dict>
+
+      <dict>
+          <key>match</key>
+          <string>^⠤(\s*\[.+\]){0,1}$</string>
+          <key>name</key>
+          <string>kanboard.item.parent_dir</string>
+          <key>captures</key>
+          <dict>
+              <key>1</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.rename_mode.kanboard</string>
+              </dict>
+          </dict>
+      </dict>
+
+      <dict>
+          <key>begin</key>
+          <string>(\S(.+)?$)</string>
+          <key>end</key>
+          <string>^(—+)(\[RENAME MODE\]){0,1}(—*)\n</string>
+          <key>name</key>
+          <string>header.kanboard</string>
+          <key>endCaptures</key>
+          <dict>
+              <key>1</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.separator.kanboard</string>
+              </dict>
+              <key>2</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.rename_mode.kanboard</string>
+              </dict>
+              <key>3</key>
+              <dict>
+                  <key>name</key>
+                  <string>punctuation.definition.separator.kanboard</string>
+              </dict>
+          </dict>
+      </dict>
+
+    </array>
+</dict>
+</plist>

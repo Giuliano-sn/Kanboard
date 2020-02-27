@@ -1,0 +1,9 @@
+[
+	{
+		"keys": ["super+f12"],
+		"command": "kanboard",
+		"args": {
+			"focus": true,
+		}
+	}
+]

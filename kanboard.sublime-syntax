@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+name: kanboard
+hidden: true
+file_extensions:
+  - kanboard
+scope: text.kanboard
+contexts:
+  main:
+    - match: '^(\s*)([▸▾] )(.*)?$'
+      scope: kanboard.item.directory
+      captures:
+        1: indent
+        2: punctuation.definition.directory.symbol.kanboard
+        3: string.name.directory.kanboard
+    - match: '^(\s*)(≡ )(\S.*?(\.[^\.\n]+)?)( \(.*\))?$'
+      scope: kanboard.item.file
+      captures:
+        1: indent
+        2: punctuation.definition.file.symbol.kanboard
+        3: string.name.file.kanboard
+        4: string.name.file.extension.kanboard
+        5: string.name.file.view_id.kanboard

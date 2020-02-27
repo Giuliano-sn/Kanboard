@@ -1,0 +1,39 @@
+// some bindings are in OS-specific files
+[
+  {
+      "keys": ["r"],
+      "command": "kanboard_files",
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.kanboard_files" },
+      ]
+  },
+  {
+      "keys": ["enter"],
+      "command": "kanboard_files_act",
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.kanboard_files" },
+      ]
+  },
+
+  {
+      "keys": ["right"],
+      "command": "kanboard_files_act", "args": {"act": "unfold"},
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.kanboard_files" },
+      ]
+  },
+  {
+      "keys": ["left"],
+      "command": "kanboard_files_act", "args": {"act": "fold"},
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.kanboard_files" },
+      ]
+  },
+  {
+    "keys": ["o"],
+    "command": "kanboard_files_open_external",
+    "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.kanboard_files" },
+    ]
+  },
+]

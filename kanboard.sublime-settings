@@ -1,0 +1,38 @@
+{
+  /* Kanboard access and default project Id */
+  "url": "https://localhost/kanboard/jsonrpc.php",
+  "username": "",
+  "password": "",
+  "project_id": 0,
+
+  /*
+  If true then show treeview else show listview.
+  */
+  "tree_view": true,
+
+  /*
+  Values for tree view:
+  full - always show full path,
+  medium - show folders with the same level on the same indents,
+  default - don't show folders with only one child folder.
+  */
+  "tree_size": "default",
+
+  /*
+  Select group to show (left or right)
+  */
+  "group_position": "right",
+  
+  "color_scheme": "Packages/Kanboard/kanboard.hidden-tmTheme",
+  "line_numbers": false,
+  "word_wrap": true,
+  "spell_check": false,
+  "scroll_past_end": false,
+  "draw_indent_guides": false,
+  "fold_buttons": true,
+  "drag_text": false,
+  "highlight_line": true,
+  "margin": 0,
+  "tab_size": 2,
+  "rulers": [],
+}

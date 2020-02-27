@@ -1,0 +1,61 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Kanboard",
+                        "children":
+                        [
+                            {
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/Kanboard/kanboard.sublime-settings",
+                                    "default": "${packages}/User/kanboard.sublime-settings"
+                                },
+                                "caption": "Settings"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/Kanboard/Default (OSX).sublime-keymap",
+                                    "default": "${packages}/User/Default (OSX).sublime-keymap",
+                                },
+                                "platform": "OSX",
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/Kanboard/Default (Windows).sublime-keymap",
+                                    "default": "${packages}/User/Default (Windows).sublime-keymap",
+                                },
+                                "platform": "Windows",
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "edit_settings", "args":
+                                {
+                                    "base_file": "${packages}/Kanboard/Default (Linux).sublime-keymap",
+                                    "default": "${packages}/User/Default (Linux).sublime-keymap",
+                                },
+                                "platform": "Linux",
+                                "caption": "Key Bindings – User"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

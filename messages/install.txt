@@ -1,0 +1,5 @@
+Thank you for installing Kanboard - plugin to show opened Projects and Tasks as a treeview or a listview
+
+For more information please read:
+
+https://github.com/Giuliano-sn/Kanboard
